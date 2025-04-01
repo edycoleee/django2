@@ -1,0 +1,24 @@
+### 1. CREATE 
+POST http://localhost:8000/api/siswa/ 
+content-type: application/json
+
+{
+"namaSiswa": "Silmi", "alamatSiswa": "Jl. Merdeka12"
+}
+
+### 2. GET ALL
+ GET http://localhost:8000/api/siswa/ HTTP/1.1
+
+### 3. GET BY ID
+ GET http://localhost:8000/api/siswa/1/ HTTP/1.1
+
+### 4. DELETE BY ID
+ DELETE http://localhost:8000/api/siswa/2/ HTTP/1.1
+
+### 5. UPDATE BY ID
+ PUT http://localhost:8000/api/siswa/3/ 
+content-type: application/json
+
+{
+"namaSiswa": "John Doe12 UPDATE", "alamatSiswa": "Jl. Merdeka12"
+}
