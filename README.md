@@ -5,7 +5,7 @@
 ```js
 echo "# django2" >> README.md
 git init
-git add README.md
+git add 
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/edycoleee/django2.git
@@ -48,7 +48,7 @@ python manage.py runserver
 
 ## 1. Create Siswa
 ### Endpoint
-**POST** `/siswa`
+**POST** `api/siswa/`
 
 ### Request Body (JSON)
 ```json
@@ -68,7 +68,7 @@ python manage.py runserver
 
 ## 2. Get All Siswa
 ### Endpoint
-**GET** `/siswa`
+**GET** `api/siswa/`
 
 ### Response (200 OK)
 ```json
@@ -87,7 +87,7 @@ python manage.py runserver
 
 ## 3. Get Siswa by ID
 ### Endpoint
-**GET** `/siswa/{id}`
+**GET** `api/siswa/{id}/`
 
 ### Response (200 OK)
 ```json
@@ -110,7 +110,7 @@ python manage.py runserver
 
 ## 4. Update Siswa
 ### Endpoint
-**PUT** `/siswa/{id}`
+**PUT** `api/siswa/{id}/`
 
 ### Request Body (JSON)
 ```json
@@ -138,7 +138,7 @@ python manage.py runserver
 
 ## 5. Delete Siswa
 ### Endpoint
-**DELETE** `/siswa/{id}`
+**DELETE** `/siswa/{id}/`
 
 ### Response (200 OK)
 ```json
@@ -155,6 +155,7 @@ python manage.py runserver
 }
 ```
 =============================
+
 ### 4. DATABASE ORM
 
 Secara default, Django akan membuat nama tabel di database berdasarkan nama aplikasi dan nama model dengan format:
